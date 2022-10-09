@@ -364,7 +364,10 @@ input[type="submit"]:hover{
         width: 90%;
         margin-bottom: 20px;
     }
-
+    .card-equipo{
+        width: 90%;
+        margin-bottom: 20px;
+    }
     /* galeria */
 
     .galeria-cont>img{
@@ -398,6 +401,10 @@ input[type="submit"]:hover{
 
     .card{
         height: 380px;
+    }
+    .card-equipo{
+        width: 90%;
+        margin-bottom: 20px;
     }
 
     .website .contenedor-textos-main{
