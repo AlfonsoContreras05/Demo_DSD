@@ -184,7 +184,78 @@ body{
     cursor: pointer;
     overflow: hidden;
 }
+/*Card */
+.card-equipo{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.card-equipo .cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card-equipo .delantera{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+.card-equipo .delantera img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-equipo .delantera h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
 
+}
+.card-equipo .trasera{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgba(3, 35, 54);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+}
+.card-equipo .trasera .enlace{
+    border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+
+}
+.card-equipo .trasera .enlace a{
+    color: white;
+}
+.card-equipo .trasera h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card-equipo .trasera p{
+    letter-spacing: 1px;
+}
+.card-equipo:hover .delantera{
+    transform: perspective(600px)rotateY(180deg);
+}
+.card-equipo:hover .trasera{
+    transform: perspective(600px)rotateY(360deg);
+}
 /* info2 */
 
 .last-section{
